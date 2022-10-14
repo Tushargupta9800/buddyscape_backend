@@ -4,6 +4,7 @@ import uuid
 
 app = Flask(__name__)
 # app.config['MONGO_URI'] = MongoClientId
+
 mongo = PyMongo(app)
 
 @app.errorhandler(404)
