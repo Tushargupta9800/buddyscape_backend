@@ -12,7 +12,7 @@ def page_not_found(error):
     return {"error" : "Page Not Found"}
 
 @app.route('/', methods = ['GET'])
-def getImage(filename):
+def getImage():
     return "hello"
 
 if __name__ == '__main__':
