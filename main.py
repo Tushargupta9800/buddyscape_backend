@@ -11,5 +11,9 @@ mongo = PyMongo(app)
 def page_not_found(error):
     return {"error" : "Page Not Found"}
 
+@app.route('/', methods = ['GET'])
+def getImage(filename):
+    return "hello"
+
 if __name__ == '__main__':
     app.run(debug = True)
